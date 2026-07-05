@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigmoid Emax Biomarker | Pharmacometrics Examples</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html#home"><span class="brand-icon">🧪</span> Pharmacometrics</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Examples</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <section class="article-hero">
+            <h1>Sigmoid Emax for Biomarkers: Capturing Sharp Exposure-Response Behavior</h1>
+            <p>This article-style example explains how a sigmoid Emax model is used when biomarker response changes sharply across the exposure range.</p>
+        </section>
+
+        <section class="article-content">
+            <p>Biomarker endpoints often display nonlinear behavior that is not well captured by a simple Emax curve. In these settings, a sigmoid Emax model may be more appropriate because it introduces a slope parameter that reflects how rapidly the response changes as exposure increases.</p>
+
+            <div class="article-callout">Key idea: the response can change steeply once exposure passes a threshold.</div>
+
+            <h2>When this model is preferred</h2>
+            <p>This structure is especially useful when response is low at low exposure, then rises quickly in a middle range, and eventually reaches a plateau. Such behavior is common in biomarker systems where the biology becomes more sensitive to drug effect over a relatively narrow exposure window.</p>
+
+            <h2>Why it matters for interpretation</h2>
+            <p>The sigmoid Emax model is valuable because it allows investigators to describe not only the overall response direction but also the sharpness of the transition. This can be important when identifying exposure thresholds, characterizing sensitivity, or distinguishing between doses that are clinically similar versus those that produce a meaningful change.</p>
+
+            <ul class="article-list">
+                <li>Captures steeper concentration-effect relationships</li>
+                <li>Useful for biomarkers with threshold-like behavior</li>
+                <li>Helps identify exposure ranges associated with meaningful response change</li>
+            </ul>
+
+            <p>From a modeling standpoint, this approach provides more flexibility than a simple Emax model and often leads to a more realistic description of biomarker dynamics in the clinically observed exposure range.</p>
+
+            <a href="index.html#projects" class="btn btn-primary">Back to examples</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Pharmacometrics Examples</p>
+        </div>
+    </footer>
+</body>
+</html>
