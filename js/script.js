@@ -119,3 +119,25 @@ style.innerHTML = `
     }
 `;
 document.head.appendChild(style);
+
+// Expand/collapse detail content for example cards
+const toggles = document.querySelectorAll('.expand-toggle');
+
+toggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+        const targetId = toggle.getAttribute('data-target');
+        const target = document.getElementById(targetId);
+
+        if (!target) return;
+
+        target.classList.toggle('active');
+        toggle.classList.toggle('active');
+
+        const icon = toggle.querySelector('i');
+        if (target.classList.contains('active')) {
+            icon.className = 'fas fa-chevron-up';
+        } else {
+            icon.className = 'fas fa-chevron-down';
+        }
+    });
+});

@@ -288,6 +288,49 @@ body {
     color: var(--primary-color);
 }
 
+.expand-toggle {
+    width: 100%;
+    text-align: left;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.expand-toggle:hover {
+    background: var(--secondary-color);
+}
+
+.expand-content {
+    display: none;
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.9rem 1rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.expand-content.active {
+    display: block;
+}
+
+.expand-content p {
+    margin-bottom: 0.6rem;
+}
+
+.expand-content ul {
+    padding-left: 1.2rem;
+    color: var(--light-text);
+}
+
 .project-tags {
     display: flex;
     flex-wrap: wrap;
