@@ -441,6 +441,32 @@ body {
     margin-bottom: 3rem;
 }
 
+.related-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.related-links a {
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    border-radius: 999px;
+    background: white;
+    color: var(--primary-color);
+    text-decoration: none;
+    border: 1px solid var(--border-color);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.related-links a:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
 .contact-links {
     display: flex;
     justify-content: center;
